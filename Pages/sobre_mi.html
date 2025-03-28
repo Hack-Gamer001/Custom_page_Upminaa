@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - UpMinaa | Streamer & Cosplayer</title>
+    <meta name="description" content="Conoce más sobre UpMinaa, streamer y cosplayer apasionada por el anime y la cultura geek.">
+    
+    <!-- Favicon y estilos -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <!-- Metadatos para redes sociales -->
+    <meta property="og:title" content="Sobre Mí - UpMinaa | Streamer & Cosplayer">
+    <meta property="og:description" content="Conoce más sobre UpMinaa, streamer y cosplayer apasionada por el anime y la cultura geek.">
+    <meta property="og:image" content="https://upminaa.com/images/upminaa-banner.jpg">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header se cargará dinámicamente -->
+    <div id="header"></div>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <main class="container about-container">
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="../upm_img/upm_img_13.png" alt="Foto de perfil de UpMinaa" class="profile-img">
+                    <div class="social-badge">
+                        <p>Sígueme en:</p>
+                        <div class="social-icons">
+                            <a href="https://twitch.tv/upminaa" target="_blank" class="social-icon twitch">
+                                <img src="../images/twitch-icon.svg" alt="Twitch">
+                            </a>
+                            <a href="https://instagram.com/upminaa" target="_blank" class="social-icon instagram">
+                                <img src="../images/instagram-icon.svg" alt="Instagram">
+                            </a>
+                            <a href="https://tiktok.com/@upminaa" target="_blank" class="social-icon tiktok">
+                                <img src="../images/tiktok-icon.svg" alt="TikTok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h1 class="about-title">¡Hola! Soy UpMinaa <span class="emoji">👋</span></h1>
+                    <div class="about-description">
+                        <p>
+                            Soy una streamer y cosplayer apasionada por el mundo del anime, los videojuegos y la cultura geek. 
+                            Desde 2022 comparto mi contenido en Twitch, donde combino <strong>Just Chatting</strong> con <strong>gameplays</strong> 
+                            y sesiones especiales de <strong>cosplay en vivo</strong>.
+                        </p>
+                        <p>
+                            Mi comunidad, el <strong>MinaaVerse</strong>, es un espacio inclusivo donde todos son bienvenidos. 
+                            Me especializo en cosplays de personajes de anime y videojuegos, mostrando todo el proceso 
+                            creativo desde el diseño hasta el resultado final.
+                        </p>
+                        <p>
+                            Cuando no estoy transmitiendo, puedes encontrarme en convenciones de anime o trabajando 
+                            en nuevos proyectos creativos. ¡Gracias por ser parte de esta aventura!
+                        </p>
+                    </div>
+                    <div class="about-cta">
+                        <a href="horarios.html" class="btn btn-primary">Ver mis horarios</a>
+                        <a href="contacto.html" class="btn btn-secondary">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de logros -->
+        <section class="achievements">
+            <h2 class="section-title">Mi trayectoria</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎮</div>
+                    <h3>Streaming</h3>
+                    <p>3+ años transmitiendo en Twitch con una comunidad activa y comprometida.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">👗</div>
+                    <h3>Cosplay</h3>
+                    <p>50+ cosplays completados de personajes de anime y videojuegos.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">❤️</div>
+                    <h3>Comunidad</h3>
+                    <p>10K+ seguidores en redes sociales que forman parte del MinaaVerse.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <!-- Scripts -->
+    <script src="../js/loadHeader.js"></script>
+    
+
+    <style>
+        /* ======================
+        ESTILOS PÁGINA SOBRE MÍ
+        ====================== */
+
+        .about-container {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            margin-bottom: 60px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .about-image:hover .profile-img {
+            transform: scale(1.03);
+        }
+
+        .social-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: rgba(255, 77, 141, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .social-badge p {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icon img {
+            width: 60%;
+            height: 60%;
+        }
+
+        .about-text {
+            color: #333;
+        }
+
+        .about-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+
+        .about-description {
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .about-description p {
+            margin-bottom: 15px;
+        }
+
+        .about-description strong {
+            color: var(--primary-color);
+        }
+
+        .about-cta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 77, 141, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Sección de logros */
+        .achievements {
+            margin-top: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievement-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .achievement-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .achievement-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .about-content {
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .about-image {
+                flex: 1;
+            }
+            
+            .about-text {
+                flex: 1;
+                padding-left: 40px;
+            }
+            
+            .about-title {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-cta {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .about-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
