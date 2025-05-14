@@ -29,46 +29,46 @@
     <!-- Header se cargará dinámicamente -->
     <div id="header"></div>
 
-    <!-- Hero Section -->
-<section class="hero">
-    <div class="hero__container container">
-        <div class="hero__content">
-            <h1 class="hero__title">¡Bienvenidos al <span class="highlight">WillidaVerse</span>!</h1>
-            <p class="hero__paragraph">Streamer en Twitch y cosplayer profesional compartiendo aventuras, gaming y transformaciones espectaculares desde 2022.</p>
-            
-            <div class="hero__stats">
-                <div class="hero__stat">
-                    <span class="hero__stat-number">125,430,000</span>
-                    <span class="hero__stat-label">Seguidores</span>
+   <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">¡Cosplays y streams <span class="highlight">con Minaa</span>!</h1>
+                <p class="hero__paragraph">Streamer en Twitch y cosplayer profesional compartiendo aventuras, gaming y transformaciones espectaculares desde 2022.</p>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">0</span>
+                        <span class="hero__stat-label">Seguidores</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">0</span>
+                        <span class="hero__stat-label">Streams</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">0</span>
+                        <span class="hero__stat-label">Cosplays</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">0</span>
+                        <span class="hero__stat-label">Horas en vivo</span>
+                    </div>
                 </div>
-                <div class="hero__stat">
-                    <span class="hero__stat-number">230</span>
-                    <span class="hero__stat-label">Streams</span>
-                </div>
-                <div class="hero__stat">
-                    <span class="hero__stat-number">570</span>
-                    <span class="hero__stat-label">Cosplays</span>
-                </div>
-                <div class="hero__stat">
-                    <span class="hero__stat-number">26280:30:13</span>
-                    <span class="hero__stat-label">Horas en vivo</span>
+
+                <div class="hero__cta">
+                    <a href="https://twitch.tv/upminaa" target="_blank" class="cta cta-primary">
+                        <i class="fab fa-twitch"></i> Ver en Twitch
+                    </a>
+                    <a href="#schedule" class="cta cta-secondary">
+                        <i class="far fa-calendar-alt"></i> Ver Horarios
+                    </a>
                 </div>
             </div>
-            
-            <div class="hero__cta">
-                <a href="https://twitch.tv/upminaa" target="_blank" class="cta cta-primary">
-                    <i class="fab fa-twitch"></i> Ver en Twitch
-                </a>
-                <a href="#schedule" class="cta cta-secondary">
-                    <i class="far fa-calendar-alt"></i> Ver Horarios
-                </a>
+            <div class="hero__image">
+                <img src="./upm_img/upm_img_12.png" alt="UpMinaa streaming" class="hero__img">
             </div>
         </div>
-        <div class="hero__image">
-            <img src="./upm_img/upm_img_12.png" alt="UpMinaa streaming" class="hero__img">
-        </div>
-    </div>
-</section>
+    </section>
 
     <main>
         <!-- Sección de Stream Stats -->
@@ -345,12 +345,13 @@
         </section>
     </main>
 
-    <!-- Footer se cargará dinámicamente -->
-    <div id="footer"></div>
+  
 
     <!-- Scripts -->
     <script src="js/loadHeader.js"></script>
-    <script src="js/loadFooter.js"></script>
+
+    <script src="twitchApi.js"></script>
+  
     <script src="js/main.js"></script>
     
     <!-- Estilos adicionales -->

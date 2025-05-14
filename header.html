@@ -29,17 +29,100 @@
     <meta property="twitter:image" content="https://upminaa.com/images/upminaa-banner.jpg">
 
     <style>
-        /* Estilos específicos para eliminar el espacio del hero */
+        /* Estilos específicos para corregir el header */
         .hero {
-            background: none;
-            height: auto;
-            min-height: 0;
-            padding: 20px 0;
+            background: none !important;
+            height: auto !important;
+            min-height: unset !important;
+            max-height: unset !important;
+            position: relative !important;
+            display: block !important;
+            grid-template-rows: unset !important;
+            color: #333 !important;
+            padding: 20px 0 !important;
+            clip-path: none !important;
+        }
+        
+        .hero::before {
+            display: none !important;
         }
         
         .nav {
-            position: relative;
-            height: auto;
+            position: relative !important;
+            height: auto !important;
+            padding: 10px 0 !important;
+            margin-bottom: 0 !important;
+        }
+        
+        .nav__title {
+            color: var(--primary-color) !important;
+        }
+        
+        .nav__links {
+            color: #333 !important;
+        }
+        
+        /* Asegurar que los elementos del menú sean clickables */
+        .nav__link {
+            position: relative !important;
+            pointer-events: all !important;
+            opacity: 1 !important;
+            height: auto !important;
+        }
+        
+        /* Ajustar alineación del menú */
+        .nav__link--menu {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: flex-end !important;
+            align-items: center !important;
+            background-color: transparent !important;
+        }
+        
+        /* Ocultar botón de cierre en vista normal */
+        .nav__close {
+            display: none !important;
+        }
+
+        /* Estilos específicos para móvil */
+        @media (max-width: 800px) {
+            .nav__menu {
+                display: block !important;
+            }
+            
+            .nav__link--menu {
+                position: fixed !important;
+                background-color: var(--dark-color) !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100% !important;
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-evenly !important;
+                align-items: center !important;
+                z-index: 100 !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+                transition: .7s opacity !important;
+            }
+            
+            .nav__link--show {
+                opacity: 1 !important;
+                pointer-events: unset !important;
+            }
+            
+            .nav__close {
+                position: absolute !important;
+                top: 30px !important;
+                right: 30px !important;
+                width: 30px !important;
+                cursor: pointer !important;
+            }
+            
+            .nav__links {
+                color: white !important;
+            }
         }
     </style>
 </head>
@@ -75,5 +158,22 @@
             </div>
         </nav>
     </header>
+
+    <!-- Aquí iría el contenido de tu página -->
+
+    <script>
+        // Script para hacer funcionar el menú móvil
+        const navMenu = document.querySelector('.nav__menu');
+        const navLink = document.querySelector('.nav__link--menu');
+        const navClose = document.querySelector('.nav__close');
+        
+        navMenu.addEventListener('click', () => {
+            navLink.classList.add('nav__link--show');
+        });
+        
+        navClose.addEventListener('click', () => {
+            navLink.classList.remove('nav__link--show');
+        });
+    </script>
 </body>
 </html>
